@@ -54,8 +54,8 @@ public class NewAppWidget extends AppWidgetProvider {
 
         // Calculate the difference in days
         long diffMillis = endOfYear.getTimeInMillis() - currentDate.getTimeInMillis();
-        int daysFromCurrentYear = (int) TimeUnit.MILLISECONDS.toDays(diffMillis);
-        return daysFromCurrentYear;
+        int RemainingDaysFromCurrentYear = (int) TimeUnit.MILLISECONDS.toDays(diffMillis);
+        return RemainingDaysFromCurrentYear + 1;
     }
 
     private static int calculatePastDaysFromCurrentYear() {
@@ -67,6 +67,6 @@ public class NewAppWidget extends AppWidgetProvider {
 
         long diffMillis = current.getTimeInMillis() - startOfYear.getTimeInMillis();
         int daysFromCurrentYear = (int) TimeUnit.MILLISECONDS.toDays(diffMillis);
-        return daysFromCurrentYear + 1;
+        return daysFromCurrentYear;
     }
 }

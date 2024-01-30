@@ -15,6 +15,7 @@
             android:layout_centerVertical="true"
             android:text="@string/appwidget_text"
             android:textSize="23sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:fontFamily="serif"
             android:layout_margin="3px"
